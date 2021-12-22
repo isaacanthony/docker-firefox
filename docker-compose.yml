@@ -1,0 +1,13 @@
+version: "3"
+
+services:
+  firefox:
+    image: jlesage/firefox:v1.17.1
+    container_name: firefox
+    environment:
+      KEEP_APP_RUNNING: 1
+    shm_size: 2gb
+    ports:
+      - 5800:5800
+    volumes:
+      - ./user.js:/config/profile/user.js
