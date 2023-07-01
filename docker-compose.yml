@@ -2,7 +2,7 @@ version: "3"
 
 services:
   firefox:
-    image: jlesage/firefox:v22.10.4
+    image: jlesage/firefox:v23.06.1
     container_name: firefox
     environment:
       KEEP_APP_RUNNING: 1
